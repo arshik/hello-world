@@ -17,6 +17,8 @@ class HomepageTests(SimpleTestCase):
         self.assertTemplateUsed(response, "home.html")
 
 
+# We can't insert following function coz we use home.html in html5 template
+# so this html file not only <h1> tag only but also inser html5 style many tags there.
 """
     def test_template_content(self):
         response = self.client.get(reverse("home"))
